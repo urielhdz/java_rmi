@@ -1,7 +1,10 @@
 import java.rmi.*;
+import java.util.Hashtable;
 public interface Shell extends Remote{
       public String request(String req) throws RemoteException;
-      public boolean setFontColor(int color_code) throws RemoteException;
-      public boolean setBackgroundColor(int color_code) throws RemoteException;
-      
+      public Theme setTheme(String user, String theme) throws RemoteException;
+      public Screen getShell(String user) throws RemoteException;
+      public Hashtable<String,Theme> getThemes() throws RemoteException;
+      public String getCommand(String command) throws RemoteException;
+      public void saveShell(String nombreUsuario, Screen shell) throws RemoteException;
 }
