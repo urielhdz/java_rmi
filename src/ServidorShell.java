@@ -59,11 +59,7 @@ public class ServidorShell extends UnicastRemoteObject implements Shell {
             return final_answer;
 	}
 
-	public void saveShell(String nombreUsuario, Screen shell) throws RemoteException{
-		//Aqui hay que guardar el objeto Screen
-		System.out.println("Shell Saved");
-
-	}
+	
         public static void main(String[] args) throws Exception{
 		System.out.println("Comenzando la ejecución del server ");
                 LocateRegistry.createRegistry(1099);

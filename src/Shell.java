@@ -6,5 +6,5 @@ public interface Shell extends Remote{
       public Screen getShell(String user) throws RemoteException;
       public Hashtable<String,Theme> getThemes() throws RemoteException;
       public String getCommand(String command) throws RemoteException;
-      public void saveShell(String nombreUsuario, Screen shell) throws RemoteException;
+     
 }
