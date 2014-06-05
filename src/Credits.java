@@ -1,3 +1,7 @@
+
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -15,6 +19,7 @@ public class Credits extends javax.swing.JFrame {
      */
     public Credits() {
         initComponents();
+         
     }
 
     /**
